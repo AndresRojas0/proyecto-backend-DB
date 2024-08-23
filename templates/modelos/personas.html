@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+    Personas
+{% endblock titulo %}
+
+{% block contenido %}
+
+<ul>
+    {% for p in personas %}
+    <li>{{ p.apellido }}, {{ p.nombre }} - {{ p.fecha_nac }} - {{ p.doc_identidad }}</li>
+    {% endfor%}
+</ul>
+
+{% endblock contenido %}

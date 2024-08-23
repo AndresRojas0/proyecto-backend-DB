@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio Web - Todos los derechos reservados (?)" />
+    <meta name="author" content="Andrés Rojas"/>
+    <meta name="keywords" content="educación, desarrollo web, frontend, backend, API-REST, MVT, MVC">
+    <link href="./static/media/icon/favicon-32x32.png" type="image/x-icon" rel="icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+    <title>
+        {% block titulo %}
+        Aplicación Back
+        {% endblock titulo %}
+    </title>
+</head>
+<body>
+    <header>
+        <h1>Proyecto back: Acceso a BBDD</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Contenido de la BBDD</h2>
+            {% block contenido %}
+
+            {% endblock contenido %}
+        </section>
+    </main>
+    <footer>
+        <p>Sitio sin licencia - 2024</p>
+    </footer>
+</body>
+</html>
