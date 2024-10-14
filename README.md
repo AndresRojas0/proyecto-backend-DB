@@ -10,7 +10,7 @@ en Python para aplicaciones web.
 Clona este repositorio en tu host.
 
 # bash
-git clone https://github.com/AndresRojas0/Fast-API-CRUD-App  
+git clone https://github.com/AndresRojas0/proyecto-backend-DB
 Navega hasta el directorio del proyecto.
 cd mi-pagina-de-inicio  
 Ejecuta el archivo app.py
