@@ -16,7 +16,7 @@ cd mi-pagina-de-inicio
 Ejecuta el archivo app.py
 
 # Despliegue
-El proyecto no está desplegado.
+El proyecto se encuentra desplegado en https://proyecto-backend-db-andresrojas.pythonanywhere.com/
 
 # Funcionalidades
 * Acceder a los endpoints API.
