@@ -12,36 +12,44 @@ Clona este repositorio en tu host.
 # bash
 * git clone https://github.com/AndresRojas0/proyecto-backend-DB
 * Navega hasta el directorio del proyecto.
-* cd mi-pagina-de-inicio  
-* Ejecuta el archivo app.py
+* cd directorio-del-proyecto
 
-# Instrucciones en PythonAnywhere
+# Instrucciones en Local host
+* `/> python -m venv mientorno` crear entorno
+* `/> .\mientorno\Scripts\activate` activar entorno
+* `(mientorno) /> pip install -r dependencias.txt` instalar dependencias
+* `(mientorno) /> pip install mysql-connector-python` instalar mysql-connector-python
+* `(mientorno) /> pip intall flask` instalar flask
+* `(mientorno) /> pip install flask-cors` instalar flask-cors
+* `(mientorno) /> pip freeze > dependencias.txt` guardar detalle dependencias
+ 
+# Instrucciones en PythonAnywhere (host)
 * PythonAnywhere -> Web -> Add new web app
 * Select a Python Web framework -> Flask
 * Select a Python versión -> (la más reciente)
 * Quickstart new Flask Project (dejar el path por defecto)
 
-## Consoles -> Bash
-``` $ ls ``` ver directorios
+## PythonAnywhere -> Consoles -> Bash
+`$ ls` ver directorios
 
-``` $ git clone [url del repo] ``` clona el repositorio
+`$ git clone [url del repo]` clona el repositorio
 
-``` $ ls ``` ver directorios nuevamente
+`$ ls` ver directorios nuevamente
 
-``` $ exit ``` cerrar consola
+`$ exit` cerrar consola
 
-## Databases 
+## PythonAnywhere -> Databases 
 * Create a database -> Database name: basedatos
 * MySQL password: (crear password alfanumérica)
 
-## Consoles -> Bash
-``` mysql> -u AndresRojas -h AndresRojas.mysql.pythonanywhere-services.com -p 'AndresRojas$basedatos' ```
+## PythonAnywhere -> Consoles -> Bash
+`mysql> -u AndresRojas -h AndresRojas.mysql.pythonanywhere-services.com -p 'AndresRojas$basedatos'`
 
-``` mysql> show databases; ```
+`mysql> show databases;`
 
-``` mysql> use AndresRojas$basedatos; ```
+`mysql> use AndresRojas$basedatos;`
 
-``` mysql> source ./proyecto-backend-DB/backup_db/basedatos.sql ```
+`mysql> source ./proyecto-backend-DB/backup_db/basedatos.sql`
 
 # Despliegue
 El proyecto se encuentra desplegado en https://proyecto-backend-db-andresrojas.pythonanywhere.com/
